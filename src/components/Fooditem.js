@@ -5,10 +5,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 export default function Fooditem(props) {
   return (
-    <Card
+    <Card 
         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
         >
         <CardMedia
@@ -25,14 +25,14 @@ export default function Fooditem(props) {
         <Typography gutterBottom variant="h5" component="h2">
             {props.itemname}
         </Typography>
-        <Typography>
+        {/* <Typography>
             This is a media card. You can use this section to describe the
             content.
-        </Typography>
+        </Typography> */}
         </CardContent>
         <CardActions>
-        <Button size="small">View</Button>
-        <Button size="small">Edit</Button>
+        <CurrencyRupeeIcon/> 50
+        {/* <Button size="small">Edit</Button> */}
         </CardActions>
     </Card>
   )

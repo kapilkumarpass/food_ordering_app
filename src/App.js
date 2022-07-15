@@ -4,13 +4,15 @@ import Button from '@mui/material/Button';
 import Signin from './components/Signin.js'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Signup from './components/Signup.js'
+import Temp from './components/Temp';
 import Home from './components/Home.js'
+import Userhome from './components/Userhome';
 function App() {
   return (
     <Router>
     <Routes>
       <Route 
-        path="/" 
+        path="/signin" 
         element={<Signin />}
       />
       <Route
@@ -18,8 +20,15 @@ function App() {
         element={<Signup />}
       />
       <Route
-        path="/home"
+        path="/"
         element={<Home />}
+      />
+       <Route
+        path="/successpage"
+        element={<Temp />}
+      />
+      <Route path="/userhome"
+      element={<Userhome/>}
       />
      
   </Routes>

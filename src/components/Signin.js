@@ -35,12 +35,15 @@ export default function SignIn() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    
+    
     console.log({
       email: data.get('email'),
       password: data.get('password'),
     });
     
-    navigate("/home")
+    navigate("/userhome")
+    
   };
 
   return (
@@ -86,7 +89,7 @@ export default function SignIn() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
-            <Link href="/home">
+            
             <Button
               type="submit"
               fullWidth
@@ -96,7 +99,7 @@ export default function SignIn() {
             >
               Sign In
             </Button>
-            </Link>
+           
             <Grid container>
               <Grid item xs>
                 <Link href="/forgotpassword" variant="body2">

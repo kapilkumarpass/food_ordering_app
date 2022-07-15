@@ -12,6 +12,10 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useNavigate } from 'react-router-dom';
+import Alert from '@mui/material/Alert';
+
+// import AlertTitle from '@material-ui/lab/AlertTitle';
 
 function Copyright(props) {
   return (
@@ -29,13 +33,28 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignUp() {
+  const navigate= useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
+   
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    const email=data.get('email');
+    const password=data.get('password');
+    const firstname=data.get('firstName');
+    const regex = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/);
+    let check=regex.test(password); 
+    if(check && firstname!=="" && email!=="" && email.includes("@aitpune.edu.in") && password!=="")
+    {
+      navigate('/successpage')
+      
+    //   console.log({
+    //   firstname:firstname,
+    //   email: data.get('email'),
+    //   password: data.get('password'),
+    // });
+    }
+    
+
   };
 
   return (
@@ -117,7 +136,7 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/signin" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>
