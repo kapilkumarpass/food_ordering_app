@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/food_ordering_app/static/css/main.073c9b0a.css",
+    "main.js": "/food_ordering_app/static/js/main.1e5a0706.js",
+    "static/media/butter_paneer.png": "/food_ordering_app/static/media/butter_paneer.b54c4e79db53ab744ede.png",
+    "static/media/Paneer-Tikka.jpg": "/food_ordering_app/static/media/Paneer-Tikka.a295904ba698da541174.jpg",
+    "static/media/MatarPaneer5.jpg": "/food_ordering_app/static/media/MatarPaneer5.01cd84837d02f1fd79f3.jpg",
+    "static/media/paneer_kolhapuri.jpg": "/food_ordering_app/static/media/paneer_kolhapuri.76f9ac47bcb4796eb6db.jpg",
+    "static/media/shahi-paneer.jpg": "/food_ordering_app/static/media/shahi-paneer.ba851a57a31a91802110.jpg",
+    "static/media/Paneer-Pulao.jpg": "/food_ordering_app/static/media/Paneer-Pulao.8fd8e230f36bfdd7b27e.jpg",
+    "static/media/handi_paneer.jpg": "/food_ordering_app/static/media/handi_paneer.9e9b941060e76c67951c.jpg",
+    "static/media/paneer-do-pyaza.jpg": "/food_ordering_app/static/media/paneer-do-pyaza.b699c6188cab47fc2e18.jpg",
+    "static/media/paneer-tikka-masala.png": "/food_ordering_app/static/media/paneer-tikka-masala.8fe012490c13b1d58ee7.png",
+    "index.html": "/food_ordering_app/index.html",
+    "main.073c9b0a.css.map": "/food_ordering_app/static/css/main.073c9b0a.css.map",
+    "main.1e5a0706.js.map": "/food_ordering_app/static/js/main.1e5a0706.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1e5a0706.js"
+  ]
+}
