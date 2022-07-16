@@ -27,10 +27,7 @@ export default function Fooditem(props) {
         <Typography gutterBottom variant="h5" component="h2">
             {props.itemname}
         </Typography>
-        {/* <Typography>
-            This is a media card. You can use this section to describe the
-            content.
-        </Typography> */}
+        
         </CardContent>
         <CardActions>
         <CurrencyRupeeIcon/> 50
