@@ -10,14 +10,16 @@ export default function Fooditem(props) {
   return (
     <Card 
         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+      
         >
         <CardMedia
         component="img"
-        height="200"
+        height="200rem"
         // sx={{
         //     // 16:9
         //     pt: '56.25%',
         // }}
+        
         image={props.imag}
         alt="random"
         />
