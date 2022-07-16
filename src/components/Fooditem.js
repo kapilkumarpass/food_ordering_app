@@ -34,7 +34,7 @@ export default function Fooditem(props) {
         </CardContent>
         <CardActions>
         <CurrencyRupeeIcon/> 50
-        {/* <Button size="small">Edit</Button> */}
+       
         </CardActions>
     </Card>
   )
